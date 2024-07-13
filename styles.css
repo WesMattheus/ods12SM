@@ -3,7 +3,7 @@ body {
     background-color: #f4f4f9;
     color: #333;
     margin: 0;
-    padding-top: 60px;
+    padding-top: 60px; 
 }
 
 .navbar {
@@ -37,7 +37,7 @@ body {
 }
 
 .navbar a:hover {
-    color: #e9c46a;
+    color: #e9c46a; 
 }
 
 .container {
@@ -47,7 +47,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
 h1 {
@@ -71,7 +71,7 @@ input {
 button {
     padding: 10px 20px;
     border: none;
-    background-color: #2a9d8f;
+    background-color: #2a9d8f; 
     color: white;
     border-radius: 4px;
     cursor: pointer;
@@ -86,4 +86,35 @@ button:hover {
 #resultado {
     margin-top: 20px;
     font-size: 16px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card {
+    background-color: #e9c46a;
+    color: #333;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.detalhes {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f4f4f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

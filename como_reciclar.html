@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como Reciclar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="#">Onde Descartar</a></li>
+            <li><a href="como_reciclar.html">Como Reciclar</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Como Reciclar</h1>
+        <div class="cards">
+            <div class="card" onclick="showDetails('vidro')">
+                <h2>Vidro</h2>
+                <p>Clique para saber mais</p>
+            </div>
+            <div class="card" onclick="showDetails('plastico')">
+                <h2>Plástico</h2>
+                <p>Clique para saber mais</p>
+            </div>
+            <div class="card" onclick="showDetails('papel')">
+                <h2>Papel</h2>
+                <p>Clique para saber mais</p>
+            </div>
+            <div class="card" onclick="showDetails('metal')">
+                <h2>Metal</h2>
+                <p>Clique para saber mais</p>
+            </div>
+        </div>
+        <div id="detalhes" class="detalhes"></div>
+    </div>
+    <script src="como_reciclar.js"></script>
+</body>
+</html>
