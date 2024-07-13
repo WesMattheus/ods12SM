@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Recicláveis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Onde Descartar</a></li>
+            <li><a href="#">Como Reciclar</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Verificador de Recicláveis</h1>
+        <form id="lixoForm">
+            <label for="tipoLixo">Informe o tipo de lixo:</label>
+            <input type="text" id="tipoLixo" placeholder="Ex: papel, vidro, orgânico">
+            <button type="submit">Verificar</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
