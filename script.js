@@ -19,3 +19,4 @@ document.getElementById('lixoForm').addEventListener('submit', function(event) {
 
     resultadoDiv.textContent = mensagem;
 });
+
