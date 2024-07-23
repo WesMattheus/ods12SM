@@ -3,14 +3,14 @@ body {
     background-color: #f4f4f9;
     color: #333;
     margin: 0;
-    padding-top: 60px; 
+    padding-top: 60px; /*evitar sobreposição da navbar */
 }
 
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #2a9d8f;
+    background-color: #2a9d8f; /* Cor do eCycle */
     color: white;
     padding: 10px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -37,7 +37,7 @@ body {
 }
 
 .navbar a:hover {
-    color: #e9c46a; 
+    color: #e9c46a; /* Cor do eCycle */
 }
 
 .container {
@@ -52,14 +52,14 @@ body {
 
 h1 {
     margin-bottom: 20px;
-    color: #2a9d8f;
+    color: #2a9d8f; /* Cor do eCycle */
 }
 
 form {
     margin-bottom: 20px;
 }
 
-input {
+select, input {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -71,7 +71,7 @@ input {
 button {
     padding: 10px 20px;
     border: none;
-    background-color: #2a9d8f; 
+    background-color: #2a9d8f; /* Cor do eCycle */
     color: white;
     border-radius: 4px;
     cursor: pointer;
@@ -80,7 +80,7 @@ button {
 }
 
 button:hover {
-    background-color: #21867a;
+    background-color: #21867a; 
 }
 
 #resultado {
@@ -92,7 +92,7 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 10px; 
 }
 
 .card {
@@ -118,5 +118,3 @@ button:hover {
     background-color: #f4f4f9;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-
