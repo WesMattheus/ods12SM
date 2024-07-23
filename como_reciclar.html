@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Como Reciclar</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="como_reciclar.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -12,10 +14,11 @@
             <li><a href="index.html">HOME</a></li>
             <li><a href="#">ONDE DESCARTAR</a></li>
             <li><a href="como_reciclar.html">COMO RECICLAR</a></li>
+            <li><a href="educacionais.html">CONTEÚDOS</a></li>
             <li><a href="#">CONTATOS</a></li>
         </ul>
     </nav>
-    <div class="container">
+    <div id="como-reciclar-container" class="container">
         <h1>Como Reciclar</h1>
         <div class="cards">
             <div class="card" onclick="showDetails('vidro')">
@@ -37,6 +40,5 @@
         </div>
         <div id="detalhes" class="detalhes"></div>
     </div>
-    <script src="como_reciclar.js"></script>
 </body>
 </html>

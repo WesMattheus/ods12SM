@@ -3,14 +3,14 @@ body {
     background-color: #f4f4f9;
     color: #333;
     margin: 0;
-    padding-top: 60px; /*evitar sobreposição da navbar */
+    padding-top: 60px; /* evitar sobreposição da navbar */
 }
 
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #2a9d8f; /* Cor do eCycle */
+    background-color: #2a9d8f;
     color: white;
     padding: 10px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -37,29 +37,30 @@ body {
 }
 
 .navbar a:hover {
-    color: #e9c46a; /* Cor do eCycle */
+    color: #e9c46a; 
 }
 
-.container {
+/* Página Home */
+#home-container {
     background: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
     text-align: center;
     margin: 0 auto; 
+    max-width: 600px;
 }
 
-h1 {
+#home-container h1 {
     margin-bottom: 20px;
-    color: #2a9d8f; /* Cor do eCycle */
+    color: #2a9d8f; 
 }
 
-form {
+#home-container form {
     margin-bottom: 20px;
 }
 
-select, input {
+#home-container select, #home-container input {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -68,10 +69,10 @@ select, input {
     font-size: 16px;
 }
 
-button {
+#home-container button {
     padding: 10px 20px;
     border: none;
-    background-color: #2a9d8f; /* Cor do eCycle */
+    background-color: #2a9d8f; 
     color: white;
     border-radius: 4px;
     cursor: pointer;
@@ -79,13 +80,29 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+#home-container button:hover {
     background-color: #21867a; 
 }
 
-#resultado {
+#home-container #resultado {
     margin-top: 20px;
     font-size: 16px;
+}
+
+/* Página Como Reciclar */
+#como-reciclar-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 auto; 
+    max-width: 800px;
+}
+
+#como-reciclar-container h1 {
+    margin-bottom: 20px;
+    color: #2a9d8f;
 }
 
 .cards {
