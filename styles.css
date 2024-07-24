@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     background-color: #f4f4f9;
+    background-image: url('C:\Users\wesll\OneDrive\Área de Trabalho\ods12SM\fundo_select_genius.jpg'); /* Caminho da imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #333;
     margin: 0;
     padding-top: 60px;
@@ -31,7 +37,7 @@ body {
 .navbar a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
     transition: color 0.3s ease;
 }
@@ -58,7 +64,7 @@ body {
 .carousel-image-container {
     position: relative;
     width: 100%;
-    height: 300px; /* Define a altura específica para as imagens */
+    height: 300px; /* Definir a altura específica para imagens */
 }
 
 .carousel-image-container img {
@@ -96,11 +102,12 @@ body {
     border-radius: 8px;
     width: 100%;
     max-width: 400px;
+    margin: 0 auto; 
 }
 
 .destaque-texto {
     background-color: #e9f5f3;
-    border: none; /* Remove a borda */
+    border: none; /* Remover a borda */
 }
 
 .destaque-texto h2 {
@@ -113,7 +120,7 @@ body {
 }
 
 .formulario {
-    border: none; /* Remove a borda */
+    border: none; /* Remover a borda */
 }
 
 .formulario h2 {
@@ -153,7 +160,7 @@ body {
     border-radius: 8px;
     width: 100%;
     max-width: 600px;
-    margin-top: 20px;
+    margin: 20px auto; 
 }
 
 .verificador-container {

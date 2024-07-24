@@ -1,22 +1,39 @@
 document.getElementById('lixoForm').addEventListener('submit', function(e) {
     e.preventDefault();
     const tipoLixoSelect = document.getElementById('tipoLixoSelect').value;
-    const tipoLixoInput = document.getElementById('tipoLixo').value.trim();
+    const tipoLixoInput = document.getElementById('tipoLixo').value.trim().toLowerCase();
 
-    let tipoLixo = tipoLixoSelect;
+    let tipoLixo = tipoLixoSelect.toLowerCase();
     if (tipoLixoInput) {
         tipoLixo = tipoLixoInput;
     }
 
+    const reciclaveis = [
+        'copos descartáveis', 'drives', 'embalagens de detergentes', 'embalagem cartonada', 
+        'embalagens de margarina', 'envelopes', 'ferramentas', 'fios e cabos elétricos', 
+        'folhetos', 'frascos de vidro', 'frascos de plástico', 'garrafas pet', 
+        'garrafas de vidro', 'geladeiras', 'impressoras', 'isopor', 
+        'janelas de vidro', 'jornais', 'latas de alumínio', 'livros', 
+        'livros didáticos', 'liquidificadores', 'metal'
+    ];
+
+    const naoReciclaveis = [
+        'cosméticos', 'cotonete', 'decoração', 'escovas de dente', 
+        'espelhos', 'esponjas', 'etiquetas', 'eureciclo', 
+        'fitas adesivas', 'fones de ouvido', 'fotografias', 'fraldas descartáveis', 
+        'gesso', 'gravatas', 'guarda-chuvas', 'lenços umedecidos', 
+        'lâmpadas', 'lâminas de barbear', 'lixeiras', 'malas', 
+        'medicamentos'
+    ];
+
     const resultadoDiv = document.getElementById('resultado');
     if (tipoLixo) {
-        if (tipoLixo.toLowerCase() === 'vidro' || tipoLixo.toLowerCase() === 'plastico' ||
-            tipoLixo.toLowerCase() === 'papel' || tipoLixo.toLowerCase() === 'metal') {
-            resultadoDiv.innerHTML = `${tipoLixo} é reciclável.`;
-        } else if (tipoLixo.toLowerCase() === 'orgânico') {
-            resultadoDiv.innerHTML = `${tipoLixo} é orgânico e deve ser compostado.`;
+        if (reciclaveis.includes(tipoLixo)) {
+            resultadoDiv.innerHTML = `${tipoLixo.charAt(0).toUpperCase() + tipoLixo.slice(1)} é reciclável.`;
+        } else if (naoReciclaveis.includes(tipoLixo)) {
+            resultadoDiv.innerHTML = `${tipoLixo.charAt(0).toUpperCase() + tipoLixo.slice(1)} não é reciclável.`;
         } else {
-            resultadoDiv.innerHTML = `${tipoLixo} não é reciclável.`;
+            resultadoDiv.innerHTML = `O tipo de lixo informado não está na lista.`;
         }
     } else {
         resultadoDiv.innerHTML = 'Por favor, informe o tipo de lixo.';
