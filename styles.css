@@ -1,15 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 body {
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'Lato', Arial, sans-serif;
     background-color: #f4f4f9;
-    background-image: url('C:\Users\wesll\OneDrive\Área de Trabalho\ods12SM\fundo_select_genius.jpg'); /* Caminho da imagem */
-    background-size: cover;
+    background-image: url('select_genius.jpeg'); /* Caminho da imagem */
+    background-size: contain; /* Ajustar a imagem sem cortes */
     background-position: center;
     background-repeat: no-repeat;
     color: #333;
     margin: 0;
     padding-top: 60px;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, li, input, select, textarea, button {
+    font-family: 'Lato', Arial, sans-serif;
 }
 
 .navbar {
@@ -49,6 +53,8 @@ body {
 #home-container {
     padding: 20px;
     text-align: center;
+    font-family: 'Lato', Arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0.3); /* Fundo transparente */
 }
 
 #home-container h1 {
@@ -84,6 +90,7 @@ body {
     padding: 10px;
     box-sizing: border-box;
     border-radius: 0 0 8px 8px;
+    font-family: 'Lato', Arial, sans-serif;
     text-align: center;
     font-size: 16px;
 }
@@ -107,15 +114,18 @@ body {
 
 .destaque-texto {
     background-color: #e9f5f3;
+    font-family: 'Lato', Arial, sans-serif;
     border: none; /* Remover a borda */
 }
 
 .destaque-texto h2 {
     color: #2a9d8f;
+    font-family: 'Lato', Arial, sans-serif;
     margin-bottom: 15px;
 }
 
 .destaque-texto p, .destaque-texto ul {
+    font-family: 'Lato', Arial, sans-serif;
     margin-bottom: 15px;
 }
 
@@ -135,6 +145,7 @@ body {
 }
 
 .formulario input, .formulario select, .formulario textarea {
+    font-family: 'Lato', Arial, sans-serif;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -165,6 +176,7 @@ body {
 
 .verificador-container {
     text-align: center;
+    font-family: 'Lato', Arial, sans-serif;
 }
 
 .verificador h2 {
@@ -208,12 +220,19 @@ body {
     font-size: 18px;
 }
 
+#places {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco translúcido */
+    padding: 20px; /* Adiciona preenchimento para o conteúdo */
+    border-radius: 8px; /* Adiciona cantos arredondados */
+}
+
 #como-reciclar-container {
     background: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    font-family: 'Lato', Arial, sans-serif;
     margin: 0 auto; 
     max-width: 800px;
 }
@@ -238,6 +257,7 @@ body {
     border-radius: 8px;
     width: 200px;
     text-align: center;
+    font-family: 'Lato', Arial, sans-serif;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
